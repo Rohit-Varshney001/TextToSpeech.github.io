@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        45deg,#efefef 25%,rgba(46, 80, 160, 0.335) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef),linear-gradient(
+        45deg,#1c4c8a 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef);
+}
+.wrapper{
+    width: 370px;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 7px;
+}
+.wrapper header{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+.wrapper form{
+    margin: 35px 0 20px;
+}
+form .row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+form .row label{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+form :where(textarea, select , button){
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+form .row textarea{
+    resize: none;
+    height: 110px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 1px solid #999;
+}
+form .row .outer{
+    height: 47px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #999;
+}
+form .row select{
+    font-size: 14px;
+}
+form button{
+    height: 52px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(
+        45deg,#efefefea,#9297e4a9 25%,rgba(46, 80, 160, 0.582) 25%,rgba(46, 90, 141, 0.205) 75%,#6a82ecc2 75%,#efefefc9),linear-gradient(
+        45deg,#1c4c8a 25%,rgba(207, 22, 22, 0) 25%,rgba(239,239,239,0) 75%,#3a5797b7 75%,#efefefea);
+}
